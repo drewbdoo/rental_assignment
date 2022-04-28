@@ -69,24 +69,3 @@ from vehicles as v
 where v.veh_reg_no not in (
 select veh_reg_no from rental_records 
 where start_date >= curdate() and end_date > curdate() + 10);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
